@@ -4,8 +4,8 @@ select Nome_Professor, Salario from professor where Salario
 between 2500 and 4000 order by Salario desc; --"desc" determina ordem decrescente
 
 
---Obtenha o nome e a idade dos alunos cujo nome contenha a letra “i” e que 
---tenha mais de 19 anos, em ordem crescente do nome do aluno.
+--QUESTÃO 2
+--Obtenha o nome e a idade dos alunos cujo nome contenha a letra “i” e que tenha mais de 19 anos, em ordem crescente do nome do aluno.
 select Nome_Aluno, Idade 
 from Aluno
 where ((Nome_Aluno like 'I%') and (Idade > 19)) -- "<Campo> like '<Caractere>%'" seleciona nomes de um campo que comecem com um determinado caractere
