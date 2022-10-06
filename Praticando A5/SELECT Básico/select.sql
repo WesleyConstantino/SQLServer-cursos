@@ -22,3 +22,13 @@ where (Cod_curso = 1001);
 --Obtenha a nota média que o aluno de matrícula igual a 1 teve nas disciplinas 
 --que ele já cursou.
 select avg(Nota) from aluno_disc where Matricula = 1;
+
+
+-- Obtenha, para cada matrícula de aluno, a nota média e a quantidade de 
+--disciplinas que cada um já cursou (considere somente os alunos que já 
+--cursaram alguma disciplina).
+select Matricula, avg(Nota) as Media, 
+count(Cod_Disciplina) as Qtde_Disciplinas 
+from aluno_disc 
+group by Matricula;
+
