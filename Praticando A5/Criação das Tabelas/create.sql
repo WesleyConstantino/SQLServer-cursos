@@ -1,3 +1,5 @@
+-- As tabelas foram criadas no Oracle Live SQL (https://livesql.oracle.com/) 
+
 create table Instituto (
 
 Cod_instituto integer,
