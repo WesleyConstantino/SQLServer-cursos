@@ -19,8 +19,8 @@ from Aluno                      --"COUNT" obtém o número de linhas analisadas
 where (Cod_curso = 1001);
 
 
---Obtenha a nota média que o aluno de matrícula igual a 1 teve nas disciplinas 
---que ele já cursou.
+--QUESTÃO 4
+--Obtenha a nota média que o aluno de matrícula igual a 1 teve nas disciplinas que ele já cursou.
 select avg(Nota) from aluno_disc where Matricula = 1;
 
 
