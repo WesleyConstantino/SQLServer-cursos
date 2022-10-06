@@ -12,8 +12,8 @@ where ((Nome_Aluno like 'I%') and (Idade > 19)) -- "<Campo> like '<Caractere>%'"
 order by  Nome_Aluno asc; --"order by <Campo> asc" determina ordem crescente
 
 
--- Obtenha a média de idade e a quantidade de alunos do curso de código igual a 
---1001.
+--QUESTÃO 3
+-- Obtenha a média de idade e a quantidade de alunos do curso de código igual a 1001.
 select avg(Idade) as Média_Idade, count(Matricula) as Qtde_Alunos --"avg(Campo)" obtém o valor médio de um atributo. "as" <Nome_Qualquer> determina nome da tabela de exibição resultante
 from Aluno                      --"COUNT" obtém o número de linhas analisadas
 where (Cod_curso = 1001);
