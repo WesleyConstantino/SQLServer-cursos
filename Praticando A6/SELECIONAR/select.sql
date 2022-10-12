@@ -49,6 +49,7 @@
 
 --Questão 7
 --Obtenha o nome de todos os professores da universidade (mesmo aqueles que ainda não ministraram disciplina) e os nomes das disciplinas que eles ministram.
+--Retorne em ordem crescente do nome do professor.
  SELECT P.nome_professor , D.nome_disciplina
  FROM Professor P LEFT JOIN Prof_Disc PD
  ON (P.cod_professor = PD.cod_professor)
