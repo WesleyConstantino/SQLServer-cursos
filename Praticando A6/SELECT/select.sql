@@ -20,3 +20,8 @@
  FROM Curso C, Aluno A
  WHERE(C.cod_curso = A.cod_curso)
  GROUP BY C.nome_curso;
+
+
+--Questão 4
+--Obtenha o nome de cada aluno da universidade (mesmo aqueles que ainda não cursaram disciplina) e a quantidade de disciplinas que cada um já cursou.
+--Retorne em ordem crescente da quantidade de disciplinas e, se houver empate na quantidade, em ordem crescente de nome do aluno.
