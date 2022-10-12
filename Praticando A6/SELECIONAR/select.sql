@@ -45,3 +45,7 @@
  FROM Disciplina D, Instituto I,Curso C
  WHERE (D.cod_curso = C.cod_curso)
  AND (C.cod_instituto = I.cod_instituto);
+
+
+--Questão 7
+--Obtenha o nome de todos os professores da universidade (mesmo aqueles que ainda não ministraram disciplina) e os nomes das disciplinas que eles ministram.
