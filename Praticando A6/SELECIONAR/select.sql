@@ -58,7 +58,7 @@
 
 
 --Questão 8
---
+--Obtenha o nome dos alunos (de qualquer curso) que têm idade superior à média de idade dos alunos do curso de 'Administracao de Empresas'.
  SELECT P.nome_professor , D.nome_disciplina
  FROM Professor P LEFT JOIN Prof_Disc PD
  ON (P.cod_professor = PD.cod_professor)
