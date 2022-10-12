@@ -41,4 +41,7 @@
 
 --Questão 6
 --Obtenha o nome de cada disciplina e o nome do instituto a que cada uma pertence.
-
+ SELECT D.nome_disciplina, I.nome_instituto
+ FROM Disciplina D, Instituto I,Curso C
+ WHERE (D.cod_curso = C.cod_curso)
+ AND (C.cod_instituto = I.cod_instituto);
