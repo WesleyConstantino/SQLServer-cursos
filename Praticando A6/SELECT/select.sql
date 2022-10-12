@@ -9,3 +9,6 @@
 
 --Questão 2
 --Obtenha a maior idade, a menor idade e a idade média dos alunos do curso de 'Ciencia da Computacao'.
+ SELECT MIN(A.idade),MAX(A.idade),AVG(A.idade)   --"MIN" pega o menor valor, "MAX" pega o maior e "AVG" a média
+ FROM Aluno A, Curso C
+ WHERE(C.Cod_Curso = 1001);
