@@ -58,3 +58,8 @@
 
 --Questão 8
 --
+ SELECT P.nome_professor , D.nome_disciplina
+ FROM Professor P LEFT JOIN Prof_Disc PD
+ ON (P.cod_professor = PD.cod_professor)
+ LEFT JOIN Disciplina D ON (PD.cod_disciplina = D.cod_disciplina)
+ ORDER BY P.nome_professor;
