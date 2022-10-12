@@ -64,3 +64,6 @@
  ON (P.cod_professor = PD.cod_professor)
  LEFT JOIN Disciplina D ON (PD.cod_disciplina = D.cod_disciplina)
  ORDER BY P.nome_professor;
+ 
+ --Questão 9
+ --
