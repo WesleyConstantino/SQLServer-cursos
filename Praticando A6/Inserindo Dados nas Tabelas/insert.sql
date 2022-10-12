@@ -1,3 +1,5 @@
+--Inserts realizados no Oracle Live SQL (https://livesql.oracle.com/) 
+
 insert into Instituto values (1, 'Ciencias Exatas');
 
 insert into Instituto values (2, 'Ciencias Humanas');
