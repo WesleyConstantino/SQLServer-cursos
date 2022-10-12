@@ -12,3 +12,11 @@
  SELECT MIN(A.idade),MAX(A.idade),AVG(A.idade)   --"MIN" pega o menor valor, "MAX" pega o maior e "AVG" a média
  FROM Aluno A, Curso C
  WHERE(C.Cod_Curso = 1001);
+
+
+--Questão 3
+--Obtenha o nome de cada curso (que tenha aluno) e, para cada curso, a média de idade e a quantidade de alunos.
+ SELECT C.nome_curso,AVG(A.idade),COUNT(A.matricula)
+ FROM Curso C, Aluno A
+ WHERE(C.cod_curso = A.cod_curso)
+ GROUP BY C.nome_curso;
