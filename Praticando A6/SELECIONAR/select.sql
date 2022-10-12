@@ -40,4 +40,5 @@
 
 
 --Questão 6
---
+--Obtenha o nome de cada disciplina e o nome do instituto a que cada uma pertence.
+
