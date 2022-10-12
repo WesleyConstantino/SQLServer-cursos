@@ -59,12 +59,20 @@
 
 --Questão 8
 --Obtenha o nome dos alunos (de qualquer curso) que têm idade superior à média de idade dos alunos do curso de 'Administracao de Empresas'.
- SELECT P.nome_professor , D.nome_disciplina
- FROM Professor P LEFT JOIN Prof_Disc PD
- ON (P.cod_professor = PD.cod_professor)
- LEFT JOIN Disciplina D ON (PD.cod_disciplina = D.cod_disciplina)
- ORDER BY P.nome_professor;
+ SELECT A.nome_aluno
+ FROM Aluno A
+ WHERE A.idade > (SELECT AVG (A.idade)
+ FROM Aluno A, Curso C
+ WHERE (C.cod_curso = 1002 and C.cod_curso = A.cod_curso));
  
  --Questão 9
  --Obtenha o nome de cada professor (que orienta aluno) e a quantidade de alunos que cada um orienta, mas somente aqueles que orientam mais alunos que o professor ‘Joao’
- 
+ SELECT COUNT (A.cod_professor_orientador) as contagem, P.nome_professor
+ FROM aluno A INNER JOIN professor P
+ ON (A.cod_professor_orientador = P.cod_professor)
+ GROUP BY P.nome_professor
+ HAVING COUNT (A.cod_professor_orientador)
+ > (SELECT COUNT (A.cod_professor_orientador)
+ FROM aluno A INNER JOIN professor P
+ ON (A.cod_professor_orientador = P.cod_professor)
+ WHERE (P.nome_professor = 'Joao'));
