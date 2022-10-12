@@ -30,3 +30,10 @@
  ON (A.matricula = AD.matricula)
  GROUP BY A.nome_aluno
  ORDER BY contagem ASC, nome_aluno ASC;
+
+--Questão 5
+-- Obtenha o nome das disciplinas que a aluna 'Claudia' cursou e a nota que ela tirou em cada uma delas.
+ SELECT A.nome_aluno ,D.nome_disciplina, AD.nota
+ FROM Aluno A, Disciplina D, Aluno_Disc AD
+ WHERE (AD.cod_disciplina = D.cod_disciplina)
+ AND (A.nome_aluno = 'Claudia');
