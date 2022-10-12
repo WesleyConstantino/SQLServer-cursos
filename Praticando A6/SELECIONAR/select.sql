@@ -66,4 +66,5 @@
  ORDER BY P.nome_professor;
  
  --Questão 9
- --
+ --Obtenha o nome de cada professor (que orienta aluno) e a quantidade de alunos que cada um orienta, mas somente aqueles que orientam mais alunos que o professor ‘Joao’
+ 
