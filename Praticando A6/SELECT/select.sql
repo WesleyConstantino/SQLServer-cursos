@@ -16,7 +16,7 @@
 
 --Questão 3
 --Obtenha o nome de cada curso (que tenha aluno) e, para cada curso, a média de idade e a quantidade de alunos.
- SELECT C.nome_curso,AVG(A.idade),COUNT(A.matricula)
+ SELECT C.nome_curso,AVG(A.idade),COUNT(A.matricula)  --"COUNT" trás a quantidade de matículas, nesse caso
  FROM Curso C, Aluno A
  WHERE(C.cod_curso = A.cod_curso)
  GROUP BY C.nome_curso;
